@@ -3,7 +3,7 @@ import { Button, Modal } from "antd";
 
 export default function Modal() {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  
+
   const showModal = () => {
     // Save the current URL to revert back to it later
     window.history.pushState(null, null, window.location.pathname);
@@ -22,7 +22,7 @@ export default function Modal() {
     setIsModalOpen(false);
   };
   return (
-    <>
+    <div>
       <Button type="primary" onClick={showModal}>
         Open Modal
       </Button>
@@ -38,6 +38,6 @@ export default function Modal() {
           since the 1500s,
         </p>
       </Modal>
-    </>
+    </div>
   );
 }
