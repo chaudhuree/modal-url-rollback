@@ -1,7 +1,7 @@
-import React, { useState } from "react";
 import { Button, Modal } from "antd";
+import React, { useState } from "react";
 
-export default function Modal() {
+export default function ModalContent() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const showModal = () => {

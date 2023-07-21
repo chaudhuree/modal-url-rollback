@@ -1,6 +1,6 @@
 import "./index.css";
-import Modal from "./Modal";
+import ModalContent from "./ModalContent";
 const App = () => {
-  return <Modal />;
+  return <ModalContent />;
 };
 export default App;
